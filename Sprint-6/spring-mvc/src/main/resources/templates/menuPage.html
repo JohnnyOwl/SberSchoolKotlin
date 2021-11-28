@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Selection menu</title>
+</head>
+
+<body>
+<div th:text="${result}"></div>
+<p>
+    <a th:href="@{/app/add}">Create New Person</a>
+</p>
+<p>
+    <a th:href="@{/app/list}">Look in Address Book</a>
+</p>
+
+</body>
+</html>

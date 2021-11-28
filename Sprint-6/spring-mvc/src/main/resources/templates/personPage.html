@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+<div th:each="person:${result}">
+    <p>Id:</p>
+    <p th:text="${person.key}">id</p>
+    <p>Name:</p>
+    <p th:text="${person.value.name}">name</p>
+    <p>Address:</p>
+    <p th:text="${person.value.address}">address</p>
+</div>
+
+<p>
+    <a href="/app/list">Back to List</a>
+</p>
+<p>
+    <a href="/app">Back to Main Menu</a>
+</p>
+</body>
+</html>
